@@ -1,3 +1,6 @@
+/* C program that calculates the factorial of an integer entered through the keyboard */
+/*  Gilbert Kipkech */
+/*  Date 25.09.2024 */
 #include<stdio.h>
 int fact (int);
 int main()
