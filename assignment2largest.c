@@ -1,4 +1,4 @@
-//find largest of three numbers using function
+/find largest of three numbers using function
 //Gilbert Kipkech, 26-09-2024
 
 #include <stdio.h>
@@ -7,33 +7,28 @@ findLargest(int num1, int num2, int num3);
 int main() {
     int n1, n2, n3, largest;
 
-   
     printf("Enter three numbers: ");
     scanf("%d %d %d", &n1, &n2, &n3);
 
-   
     largest = findLargest(n1, n2, n3);
 
-    
     printf("The largest number is: %d\n", largest);
 
     return 0;
-}
-
-
-findLargest(int a, int b, int c) 
-{
-    int max = a; 
-
-    if (b > max) 
+	}
+	
+findLargest(int num1, int num2, int num3) 
 	{
-        max = b; 
+    int max = num1; 
+
+    if (num2 > max) 
+	{
+        max = num2; 
     }
-    if (c > max) 
+    if (num3 > max) 
 	{
-        max = c; 
+        max = num3; 
     }
 
     return (max); 
-}
-
+	}
