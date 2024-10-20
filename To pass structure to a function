@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include<conio.h>
+struct emp
+{
+	int eid;
+	char name[20];
+	char branch[20];
+}
+main ()
+{
+struct emp e;
+printf("\nEnter employer id:");
+scanf("%d", e.eid);
+printf("\nenter employer name:");
+scanf("%s", e.name);
+printf("\nenter the branch:");
+scanf("%s", e.branch);
+display (e); 
+}
+display (struct emp x)
+{
+printf("emp_eid", x.eid);
+printf("emp_name", x.name);
+printf("emp_branch", x.branch);
+	
+}
