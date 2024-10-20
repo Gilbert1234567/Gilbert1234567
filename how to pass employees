@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+
+struct Employee {
+    int id;
+    char name[50];
+    float salary;
+};
+
+void displayEmployees(struct Employee emp[], int count) {
+    for (int i = 0; i < count; i++) {
+        printf("Employee ID: %d\n", emp[i].id);
+        printf("Name: %s\n", emp[i].name);
+        printf("Salary: %.2f\n\n", emp[i].salary);
+    }
+}
+
+int main() {
+    struct Employee employees[5];
+
+    for (int i = 0; i < 5; i++) {
+        employees[i].id = i + 1;
+        snprintf(employees[i].name, sizeof(employees[i].name), "Employee %d", i + 1);
+        employees[i].salary = 50000 + (i * 5000);
+    }
+
+    displayEmployees(employees, 5);
+
+    return 0;
+}
