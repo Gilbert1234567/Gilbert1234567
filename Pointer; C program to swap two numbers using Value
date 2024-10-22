@@ -1,0 +1,21 @@
+/*Pointer; C program to swap two numbers using Value */
+/* Gilbert Kipkech*/
+/* Roll No. 33*/
+/* Date 22.10.2024*/
+
+
+#include <stdio.h>
+
+	 main() {
+    int x = 10, y = 20;
+    int temp;
+
+    printf("Before swapping: x = %d, y = %d\n", x, y);
+
+    temp = x;  
+    x = y;    
+    y = temp;
+
+    printf("After swapping: x = %d, y = %d\n", x, y);
+
+}
