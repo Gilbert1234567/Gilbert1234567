@@ -1,0 +1,29 @@
+/*Quiz Task2. Create a structure to represent More students, which includes the following fields: name, age, and grade.  */
+/* Gilbert Kipkech*/
+/* Roll No. 33*/
+/* Date 22.10.2024*/
+
+#include <stdio.h>
+
+ int i;
+ main() {
+    struct stud {
+        char name[25];
+        char grade [25];
+        int age;
+    } x[5];
+    
+    for (i = 1; i <=5; i++) {
+        printf("\nEnter the Student Name: ");
+        scanf("%s", x[i].name);
+        printf("Enter the Student Grade: ");
+        scanf("%s", x[i].grade);
+        printf("Enter the Student Age: ");
+        scanf("%d", &x[i].age);
+    }
+        for (i = 1; i <=5; i++){
+        printf("\nName => %s", x[i].name);
+        printf("\nStudent Grade => %s", x[i].grade);
+        printf("\nStudent Age => %d\n", x[i].age); 
+    }
+}
