@@ -1,0 +1,29 @@
+/*Quiz Task3(Extention). create another structure for a library that contains an array of books.   */
+/* Gilbert Kipkech*/
+/* Roll No. 33*/
+/* Date 22.10.2024*/
+
+#include <stdio.h>
+
+ int i;
+ main() {
+    struct book {
+        char title[25];
+        char author [25];
+        int yop;
+    } x[5];
+    
+    for (i = 1; i <=5; i++){
+        printf("\nEnter the Title Name: ");
+        scanf("%s", x[i].title);
+        printf("Enter the Author Name: ");
+        scanf("%s", x[i].author);
+        printf("Enter the publication year: ");
+        scanf("%d", &x[i].yop);
+    }
+        for (i = 1; i <=5; i++){
+        printf("\nTitle Name => %s", x[i].title);
+        printf("\nAuthor Name => %s", x[i].author);
+        printf("\npublication year => %d\n", x[i].yop); 
+    }
+}
