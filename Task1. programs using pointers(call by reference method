@@ -1,0 +1,40 @@
+/*Task1. programs using pointers(call by reference method) */
+/* Gilbert Kipkech*/
+/* Roll No. 33*/
+/* Date 23.10.2024*/
+
+#include <stdio.h>
+
+struct stud {
+    char name[25];
+    char grade[25];
+    int age;
+};
+
+void inputStudent(struct stud *s);
+void displayStudent(const struct stud *s);
+
+int main() {
+    struct stud x;
+
+    inputStudent(&x);
+
+    displayStudent(&x);
+
+    return 0;
+}
+
+void inputStudent(struct stud *s) {
+    printf("\nEnter the Student Name: ");
+    scanf("%s", s->name);
+    printf("Enter the Student Grade: ");
+    scanf("%s", s->grade);
+    printf("Enter the Student Age: ");
+    scanf("%d", &s->age);
+}
+
+void displayStudent(const struct stud *s) {
+    printf("\nName => %s", s->name);
+    printf("\nStudent Grade => %s", s->grade);
+    printf("\nStudent Age => %d\n", s->age); 
+}
