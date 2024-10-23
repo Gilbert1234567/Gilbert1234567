@@ -1,0 +1,41 @@
+/*Program function that returns the value to the main */
+/* Gilbert Kipkech*/
+/* Roll No. 33*/
+/* Date 23.10.2024*/
+
+#include <stdio.h>
+
+struct stud {
+    char name[25];
+    char grade[25];
+    int age;
+};
+
+struct stud inputStudentDetails() {
+    struct stud s;
+
+    printf("\nEnter the Student Name: ");
+    scanf("%s", s.name);
+    printf("Enter the Student Grade: ");
+    scanf("%s", s.grade);
+    printf("Enter the Student Age: ");
+    scanf("%d", &s.age);
+
+    return s;
+}
+
+void displayStudentDetails(struct stud s) {
+    printf("\nName => %s", s.name);
+    printf("\nStudent Grade => %s", s.grade);
+    printf("\nStudent Age => %d\n", s.age);
+}
+
+int main() {
+    struct stud x;
+
+    x = inputStudentDetails();
+
+    displayStudentDetails(x);
+
+    return 0;
+}
