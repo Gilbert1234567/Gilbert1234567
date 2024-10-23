@@ -1,0 +1,25 @@
+/*Quiz Task3. Create a structure to represent a book, which includes fields for title, author, and publication year.  */
+/* Gilbert Kipkech*/
+/* Roll No. 33*/
+/* Date 22.10.2024*/
+
+
+#include <stdio.h>
+
+ main() {
+    struct book {
+        char title[25];
+        char author [25];
+        int yop;
+    } x;
+        printf("\nEnter the Title Name: ");
+        scanf("%s", x.title);
+        printf("Enter the Author Name: ");
+        scanf("%s", x.author);
+        printf("Enter the publication year: ");
+        scanf("%d", &x.yop);
+        
+        printf("\nTitle => %s", x.title);
+        printf("\nAuthor Name => %s", x.author);
+        printf("\npublication year => %d\n", x.yop); 
+    }
