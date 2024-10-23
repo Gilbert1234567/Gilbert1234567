@@ -1,0 +1,24 @@
+/*Classwork  */
+/* Gilbert Kipkech*/
+/* Roll No. 33*/
+/* Date 22.10.2024*/
+
+#include <stdio.h>
+
+struct stud {
+    char name[25];
+    float marks;
+};
+
+void show(struct stud m); 
+
+	main() {
+    struct stud s1 = {"Gilbert Kipkech", 56};
+    show(s1);
+    return 0;
+}
+
+void show(struct stud m) {
+    printf("%s\n", m.name);
+    printf("%f\n", m.marks);
+}
