@@ -1,0 +1,26 @@
+/*Union */
+/* Gilbert Kipkech*/
+/* Roll No. 33*/
+/* Date 24.10.2024*/
+
+#include <stdio.h>
+
+union car {
+    char name[25];
+    float price;
+};
+
+main() {
+    union car c;
+
+    printf("Enter the name of the Car: ");
+    scanf("%s", c.name);
+    printf("Enter the price of the Car: ");
+ 	 scanf("%f", c.price);
+}
+display(union car c)
+{
+	printf("\nName of the car:%s", c.name);
+	printf("\nPrice of the Car:%f", c.price);
+	return 0;
+}
