@@ -1,7 +1,7 @@
 /*using structures and files  */
 /* Gilbert Kipkech*/
 /* Roll No. 33*/
-/* Date 05.11.2024*/
+/* Date 07.11.2024*/
 
 #include <stdio.h>
 	  	main() 
