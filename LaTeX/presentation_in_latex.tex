@@ -1,0 +1,78 @@
+\documentclass{beamer}
+\usepackage{listings}
+\usepackage{graphicx}
+\usetheme{AnnArbor}
+\title{Topic: While Loop in C}
+\author{Gilbert Kipkech}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}{Introduction to while Loop}
+\begin{itemize}
+        \item A while loop is used to repeat a block of code as long as a given condition is true.
+        
+    \end{itemize}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.4\linewidth]{image/Flowchart of while loop.png}
+    \caption{Flow chat of while loop}
+    \label{fig:enter-label}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Syntax of while Loop in C}
+    \begin{block}{Syntax}
+        \texttt{while (condition) \{}
+        \begin{itemize}
+            \item \texttt{/* Code to execute */}
+        \end{itemize}
+        \texttt{\}}
+    \end{block}
+    \begin{itemize}
+        \item The condition is checked before entering the loop.
+        \item If the condition is false, the loop body does not execute.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Example of Simple While loop Program in C}
+\begin{block}{code}
+    
+ \begin{lstlisting}
+#include <stdio.h>
+
+    main() {
+    int i = 0;
+    while (i <= 5) {  
+        printf("%d\n", i);
+        i++;
+    }
+  
+}
+\end{lstlisting}
+
+    \end{block}
+    \begin{itemize}
+        \item This loop prints numbers from 0 to 5.
+        \item The loop continues until {i} reaches 5.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Output}
+    \includegraphics[width=6cm, height=3cm]{image/whileloopoutt.JPG}
+    \begin{itemize}
+        \item {i} is initialized to 0.
+       \item The loop checks \( i \leq 5 \); if true, the code inside is executed.
+        \item When {i} reaches 5,the loop ends.
+    \end{itemize}
+\end{frame}
+\begin{frame}
+\textit{THANK YOU.}
+    
+\end{frame}
+
+\end{document}
